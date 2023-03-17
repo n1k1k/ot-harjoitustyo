@@ -1,0 +1,96 @@
+commit ac0e2d17abc24e03ef797e9a977e509ef735a670
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Fri Mar 17 10:59:02 2023 +0200
+
+    file1 poistettu ja file2 uudelleennimetty
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit fa9b680a00e7d8469e68ceffb1428d10c0aa07c6
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Fri Mar 17 10:55:51 2023 +0200
+
+    tiedostot luotu
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 82ddeb5fe1be5b609a652a31dd9eecb95daa14ad
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Thu Mar 16 14:51:24 2023 +0200
+
+    muutokset teidostoihin
+
+ eka.txt    | 4 +---
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 4 deletions(-)
+
+commit bc97c2d16af041114388ba4806269fa083148920
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Thu Mar 16 14:44:31 2023 +0200
+
+    uudelleennimeäminen
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 434ab576380636404f6945f9dea598c82df49d23
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Thu Mar 16 14:43:14 2023 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 1787d818e4effa8cf67850baa277e5cbc12aca6b
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Thu Mar 16 14:37:58 2023 +0200
+
+    tiedosto.txt osa tekstistä poistettu ja kirjoitettu lisää
+
+ tiedosto.txt | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+commit 7ec5c10dd41954cc14865c6d2c5558242a8c6601
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Thu Mar 16 14:36:18 2023 +0200
+
+    tiedosto.txt kopioitu teksti lisätty
+
+ tiedosto.txt | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+commit 66e5141332f5c872eb4de3a3f91b82e44f6aa6ad
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Wed Mar 15 14:23:54 2023 +0200
+
+    muutokset ja stuff ja jotain.txt luotu
+
+ kolmas.txt       | 1 +
+ stuff/jotain.txt | 0
+ toinen.txt       | 1 +
+ 3 files changed, 2 insertions(+)
+
+commit 789b09557c6e69c801222e92f42f414b6570de8e
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Wed Mar 15 14:13:03 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit c5ee8b691dea1501dfcae3c5c09f1f139aa6f2a8
+Author: Nanna Ketola <nannailona@gmail.com>
+Date:   Wed Mar 15 14:10:43 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
