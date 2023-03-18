@@ -1,4 +1,4 @@
-# Ohjelmistotekniikka 2023, harjoitustyö
+# Ohjelmistotekniikka, harjoitustyö
 
 ## Tehtävät
 ### Viikko 1
