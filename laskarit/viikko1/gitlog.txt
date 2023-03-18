@@ -1,3 +1,5 @@
+git log
+
 commit ac0e2d17abc24e03ef797e9a977e509ef735a670
 Author: Nanna Ketola <nannailona@gmail.com>
 Date:   Fri Mar 17 10:59:02 2023 +0200
