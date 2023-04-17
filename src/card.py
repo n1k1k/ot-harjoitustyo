@@ -15,4 +15,4 @@ class Card:
                 value = 11
             else:
                 value = 10
-        return value
+        return value    
