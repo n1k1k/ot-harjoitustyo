@@ -1,7 +1,7 @@
 from invoke import task
 
 @task
-def stat(ctx):
+def start(ctx):
     pass
 
 @task
@@ -15,3 +15,7 @@ def coverage(ctx):
 @task(coverage)
 def coverage_report(ctx):
     ctx.run("coverage html", pty=True)
+
+@task
+def lint(ctx):
+    ctx.run("pylint src")
