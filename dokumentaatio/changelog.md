@@ -1,3 +1,6 @@
+## Viikko 3
+
 ## Viikko 4
 - Tarvittavien luokkien toteutus
-- Testattu, että Card luokka toimii oikein
+- Aloitettu käyttöliitttymän ja pelilogiikan toteutus
+- Testattu, että Card luokka asettaa kortin arvon oikein ja Game loukka jakaa kortin pelaajalle oikein
