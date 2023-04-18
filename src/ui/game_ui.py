@@ -19,15 +19,15 @@ class GameView:
 
         #Card frames
         global dealer_fr, player_fr
-        dealer_fr = LabelFrame(main_frame, text='DEALER', font=('Courier New', 16, 'bold'), bg='plum1', bd=0, labelanchor='n')
+        dealer_fr = LabelFrame(main_frame, text=f'DEALER', font=('Courier New', 16, 'bold'), bg='plum1', bd=0, labelanchor='n')
         dealer_fr.pack(ipadx=20, pady=10)
-        player_fr = LabelFrame(main_frame, text='PLAYER', font=('Courier New', 16, 'bold'), bg='plum1', bd=0, labelanchor='n')
+        player_fr = LabelFrame(main_frame, text=f'PLAYER', font=('Courier New', 16, 'bold'), bg='plum1', bd=0, labelanchor='n')
         player_fr.pack(padx=20, ipadx=20)
 
         #Buttons
         button_fr = Frame(self.display, bg='plum1')
         button_fr.pack(pady=20)
-        hit_button = Button(button_fr, text='HIT', font = ('Courier New', 14, 'bold'), bg='aquamarine1', bd = 0, command=self.player_hit)
+        hit_button = Button(button_fr, text='HIT', font = ('Courier New', 14, 'bold'), bg='aquamarine1', bd = 0, command=self.deal_to_player)
         hit_button.grid(row=0,column=0)
         stand_button = Button(button_fr, text='STAND', font = ('Courier New', 14, 'bold'), activebackground='aquamarine1')
         stand_button.grid(row=0,column=1, padx = 20)
@@ -42,10 +42,10 @@ class GameView:
     def first_round(self):
         self.game.first_round()
         for _ in range(2):
-            self.player_hit()
-            self.dealer_hit()
+            self.deal_to_player()
+            self.deal_to_dealer()
     
-    def player_hit(self):
+    def deal_to_player(self):
         global player_card_1, player_card_img_1, player_card_2, player_card_img_2, player_card_3, player_card_img_3, player_card_4, player_card_img_4, player_card_5, player_card_img_5  
         if self.player_spot <= 5:
             if self.player_spot <= 1:
@@ -84,8 +84,9 @@ class GameView:
                     player_card_img_5 = self.img_resize(f"src/ui/images/{card.suit}.png")
                     player_card_5.config(text=f'{card.rank}', fg = 'white', font=('Courier New', 25, 'bold'), image=player_card_img_5, compound='center')
                     self.player_spot += 1
+            player_fr.config(text=f'PLAYER {self.game.player.score}')
 
-    def dealer_hit(self):
+    def deal_to_dealer(self):
         global dealer_card_1, dealer_card_img_1, dealer_card_2, dealer_card_img_2, dealer_card_3, dealer_card_img_3, dealer_card_4, dealer_card_img_4, dealer_card_5, dealer_card_img_5  
         if self.dealer_spot <= 5:
             if self.dealer_spot <= 1:
@@ -124,6 +125,7 @@ class GameView:
                     dealer_card_img_5 = self.img_resize(f"src/ui/images/{card.suit}.png")
                     dealer_card_5.config(text=f'{card.rank}', fg = 'white', font=('Courier New', 25, 'bold'), image=dealer_card_img_5, compound='center')
                     self.dealer_spot += 1
+            dealer_fr.config(text=f'DEALER {self.game.dealer.score}')
 
 
     def img_resize(self, card):
