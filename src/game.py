@@ -7,12 +7,12 @@ class Game:
         self.player = Player()
         self.dealer = Player()
         self.deck = Deck()
-    
+
     def deal_card(self, player: Player):
         card = self.deck.cards.pop(0)
         player.hand.append(card)
         player.score += card.value
-    
+
     def first_round(self):
         self.deck.add_cards()
         random.shuffle(self.deck.cards)
