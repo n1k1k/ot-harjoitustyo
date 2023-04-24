@@ -6,7 +6,7 @@ class Deck:
 
     def add_cards(self):
         suits = ['spades', 'clubs', 'hearts', 'diamonds']
-        ranks = ['A','2','3','4','5','6','7','8','9','J','Q','K']
+        ranks = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
 
         for suit in suits:
             for rank in ranks:
@@ -14,4 +14,4 @@ class Deck:
 
     @property
     def cards_left(self):
-        return len(self.add_cards)
+        return len(self.cards)
