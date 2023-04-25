@@ -24,7 +24,7 @@ class Game:
         self.deck.cards = []
         self.deck.add_cards()
         random.shuffle(self.deck.cards)
-    
+
     def deal_new_game(self):
         self.player.hand = []
         self.dealer.hand = []
@@ -36,12 +36,12 @@ class Game:
         for _ in range(2):
             self.deal_card(self.player)
             self.deal_card(self.dealer)
-        
+
         if self.player.score == 21:
             self.player.status = 'Blackjack'
         if self.dealer.score == 21:
             self.dealer.status = 'Blackjack'
-        
+   
     def stand(self):
         if self.dealer.score < 21:
             if len(self.dealer.hand) == 5:
@@ -53,7 +53,7 @@ class Game:
             self.player.status = 'Tie'
         elif self.dealer.score > self.player.score:
             self.dealer.status = 'Win'
-    
+
     def check_for_bust(self):
         if self.player.score > 21:
             self.player.status = 'Bust'
