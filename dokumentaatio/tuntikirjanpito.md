@@ -7,4 +7,5 @@
 | | 4 | Tkinkterin opettelu |
 | 18.4 | 2 | Käyttöliittymän toteutuksen aloitus |
 |  | 0,5 | Lisää testejä |
-| yht. | 9| |
+| 24.4 | 3 | Pelin käyttöliittymän ja logiikan viimeistely |
+| yht. | 12 | |
